@@ -31,7 +31,7 @@ export default function Home() {
 
   // Fetch initial data
   useEffect(() => {
-    fetch("http://localhost:8000/api/v1/locations")
+    fetch("https://zomatoai-saprrfuhjdbny4zlzpmahe.streamlit.app/api/v1/locations")
       .then((res) => res.json())
       .then((data) => {
         setLocations(data.locations || []);
@@ -39,7 +39,7 @@ export default function Home() {
       })
       .catch((err) => console.error("Error fetching locations:", err));
 
-    fetch("http://localhost:8000/api/v1/cuisines")
+    fetch("https://zomatoai-saprrfuhjdbny4zlzpmahe.streamlit.app/api/v1/cuisines")
       .then((res) => res.json())
       .then((data) => {
         setCuisines(data.cuisines || []);
@@ -56,7 +56,7 @@ export default function Home() {
     setResults([]);
 
     try {
-      const response = await fetch("http://localhost:8000/api/v1/recommend", {
+      const response = await fetch("https://zomatoai-saprrfuhjdbny4zlzpmahe.streamlit.app/api/v1/recommend", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
