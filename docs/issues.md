@@ -1,0 +1,3 @@
+--1-- In location option, make the drop down locations visible that is in black color and while hovering the mouse over it, select it in bue color and make it white 
+--2--make the headings in white color to make it visible in black baclground
+--3-- replace the slider control to choosing the input and drop down selection for rating and cost 

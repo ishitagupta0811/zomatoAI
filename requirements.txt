@@ -1,0 +1,8 @@
+pandas
+datasets
+pyarrow
+fastapi
+uvicorn
+pydantic
+groq
+python-dotenv
